@@ -1,7 +1,3 @@
-### Code for my personal site which includes: ###
-- LinkedIn
-- GitHub
-- Gmail
-- Resume
+### [aaaka5h.github.io](aaaka5h.github.io)
 
 
