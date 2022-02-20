@@ -1,6 +1,6 @@
 /* ADD REAL PHOTO LATER */
 
-body {
+body{
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,7 +9,7 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-.box {
+.box{
     margin-top: 50px;
     vertical-align: center;
     background: rgb(0, 0, 0, 0.4);
@@ -17,17 +17,39 @@ body {
     width: 400px;
     padding: 50px;
 }
-.box-img {
+.box-img{
     width: 200px;
     height: 200px;
 }
 
-.box h1 {
+.box h1{
     font-size: 40px;
     font-weight: 100;
 }
 
-.box h5 {
+.box h5{
     font-size: 20px;
     font-weight: 80;
 }
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.box li{
+    display: inline-block;
+    margin: 5px;
+    list-style: none;
+    padding: 10px;
+}
+
+.box li a{
+    color: darkolivegreen;
+    font-size: 50px;
+}
+
+.box li a:hover{
+    color: black;
+}
+
