@@ -1,30 +1,63 @@
 // Fun facts about me:
-var facts = {
-    1: 'My favorite movie is Inception',
-    2: 'My favorite show is Breaking Bad',
-    3: 'My favorite sport is soccer',
-    4: 'I have never broken a bone',
-    5: 'My mom is Italian',
-    6: 'My dad is Nepalese',
-    7: 'I am allergic to cats',
-    8: 'I play the guitar',
-    9: 'I play the violin',
-    10: 'My first, middle, and last name all start with \'A\'',
-    11: 'I have to concentrate to spell exersice correctly',
-    12: 'I used to want to become a lawyer because I watched a lot of Suits',
-    13: 'In my first year of university, my roommate had the same birthday as me'
-};
+var facts = [
+    'My favorite movie is Inception',
+    'My favorite show is Breaking Bad',
+    'My favorite sport is soccer',
+    'I have never broken a bone',
+    'My mom is Italian',
+    'My dad is Nepalese',
+    'I am allergic to cats',
+    'I play the guitar',
+    'I play the violin',
+    'My first name, middle name, and last name all start with \'A\'',
+    'I have to concentrate to spell exersice correctly',
+    'I used to want to become a lawyer because I watched a lot of Suits',
+    'In my first year of university, my roommate had the same birthday as me',
+    'My favorite colour is red',
+    'My favorite programming language is C++',
+    'I can juggle',
+    'I used to sleepwalk',
+    'I lived in Milan when I was very small',
+    'I have been stung by a jellyfish',
+    'My favorite book is "Tales of the Unexpected", a collection of short stories written by Roald Dahl'
+];
 
+// shuffle facts array
+function shuffleFacts(arr) {
+    let currentIndex = arr.length,  randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [arr[currentIndex], arr[randomIndex]] = [
+        arr[randomIndex], arr[currentIndex]];
+    }
+  
+    return arr;
+  }
 
 // Give new fact on click
 function refresh() {
-    document.getElementById('funFacts').innerHTML = rand_fact(facts);
+    document.getElementById('funFacts').innerHTML = popElem(shuffleFacts(facts));
 }
 
-// Generate a new fun fact
-var rand_fact = function(facts) {
-    var keys = Object.keys(facts);
-    return facts[keys[Math.floor(keys.length * Math.random())]];
+// Return new fun fact
+function popElem(arr) {
+    if (arr.length > 0) {
+        return arr.pop();
+    } else {
+        return "I'll add more facts soon!"
+    }
 }
+
+// Generate a new fun fact but REPEATS FACTS
+// var rand_fact = function(facts) {
+//     return facts[Math.floor(keys.length * Math.random())];
+// }
 
 
