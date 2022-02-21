@@ -14,12 +14,17 @@ var facts = [
     'I used to want to become a lawyer because I watched a lot of Suits',
     'In my first year of university, my roommate had the same birthday as me',
     'My favorite colour is red',
-    'My favorite programming language is C++',
     'I can juggle',
     'I used to sleepwalk',
     'I lived in Milan when I was very small',
     'I have been stung by a jellyfish',
-    'My favorite book is "Tales of the Unexpected", a collection of short stories written by Roald Dahl'
+    'My favorite book is "Tales of the Unexpected", a collection of short stories written by Roald Dahl',
+    'I am triple vaccinated',
+    'The first time I drove a car, I hit a tree',
+    'One of my favorite albums of all time is Trilogy by The Weeknd',
+    'My favorite card game is a Nepali card game called Marriage, played with 3 decks of cards',
+    'I was the co-president of my high school\'s Model United Nations club',
+    'My favorite season is summer'
 ];
 
 // shuffle facts array
