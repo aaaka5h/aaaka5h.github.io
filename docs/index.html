@@ -11,8 +11,8 @@
     <title>Akash Adhikary</title>
 </head>
 <body>
-    <div class = "box">
-        <img src="head-silhouette.jpg" alt="" class="box-img">
+    <div class = "info">
+        <img src="head-silhouette.jpg" alt="" class="info-img">
         <h1>Akash Adhikary</h1>
         <p>
             Hi there! I am a 2nd year Computer Science and Business student at the University of British Columbia.
@@ -26,5 +26,12 @@
             <li><a href="resume.pdf" target="blank"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></a></li>
         </ul>
     </div>
+    <div id="funFacts-container">
+        <h2>Fun Fact:</h2>
+        <div id="funFacts"></div>
+        <button id="newFactButton" type="button" onclick="refresh()">New fact</button>
+    </div>
+    
 </body>
+<script src="funFacts.js"></script>
 </html>

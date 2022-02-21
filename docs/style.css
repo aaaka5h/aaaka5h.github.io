@@ -9,41 +9,64 @@ body{
     font-family: "Lato", sans-serif;
 }
 
-.box{
+.info{
     vertical-align: center;
     background: rgb(0, 0, 0, 0.3);
     text-align: center;
     width: 400px;
     padding: 50px;
 }
-.box-img{
+.info-img{
     width: 200px;
     height: 200px;
 }
-
-.box p{
+.info p{
     font-size: 18px;
     font-weight: 100;
 }
-
 ul{
     margin: 0;
     padding: 0;
 }
-
-.box li{
+.info li{
     display: inline-block;
     margin: 5px;
     list-style: none;
     padding: 10px;
 }
-
-.box li a{
+.info li a{
     color: darkolivegreen;
     font-size: 50px;
 }
-
-.box li a:hover{
+.info li a:hover{
     color: black;
+    transition: ease-in-out 700ms;
 }
+
+#funFacts-container{
+    margin-left: 38px;
+    width: 200px;
+    height: fit-content;
+}
+#funFacts{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+#funFacts h2{
+    padding: 0px;
+}
+
+#newFactButton{
+    background-color: darkolivegreen;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#newFactButton:hover{
+    background-color: rgb(76, 92, 48);
+}
+
+
 
