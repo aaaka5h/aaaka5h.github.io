@@ -27,7 +27,7 @@ var facts = [
     'My favorite season is summer'
 ];
 
-// shuffle facts array
+// Shuffle facts array
 function shuffleFacts(arr) {
     let currentIndex = arr.length,  randomIndex;
   
@@ -46,7 +46,7 @@ function shuffleFacts(arr) {
     return arr;
   }
 
-// Give new fact on click
+// Display new fact on click
 function refresh() {
     document.getElementById('funFacts').innerHTML = popElem(shuffleFacts(facts));
 }
@@ -59,10 +59,4 @@ function popElem(arr) {
         return "I'll add more facts soon!"
     }
 }
-
-// Generate a new fun fact but REPEATS FACTS
-// var rand_fact = function(facts) {
-//     return facts[Math.floor(keys.length * Math.random())];
-// }
-
 
