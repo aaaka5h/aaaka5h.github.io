@@ -5,11 +5,12 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: darkolivegreen;
+    background-color: grey;
     font-family: "Lato", sans-serif;
 }
 
 .info{
+    border-radius: 20px;
     vertical-align: center;
     background: rgb(0, 0, 0, 0.3);
     text-align: center;
@@ -35,7 +36,7 @@ ul{
     padding: 10px;
 }
 .info li a{
-    color: darkolivegreen;
+    color: grey;
     font-size: 50px;
 }
 .info li a:hover{
@@ -56,7 +57,7 @@ ul{
 }
 
 #newFactButton{
-    background-color: darkolivegreen;
+    background-color: grey;
     color: black;
     border-radius: 10px;
     border: 2px solid black;
