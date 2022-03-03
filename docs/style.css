@@ -5,7 +5,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: grey;
+    background-color: wheat;
     font-family: "Lato", sans-serif;
 }
 
@@ -36,7 +36,7 @@ ul{
     padding: 10px;
 }
 .info li a{
-    color: grey;
+    color: wheat;
     font-size: 50px;
 }
 .info li a:hover{
@@ -57,13 +57,14 @@ ul{
 }
 
 #newFactButton{
-    background-color: grey;
+    background-color: wheat;
     color: black;
     border-radius: 10px;
     border: 2px solid black;
+    transition: ease-in-out 500ms;
 }
 #newFactButton:hover{
-    background-color: rgb(76, 92, 48);
+    background-color: rgb(231, 179, 83);
 }
 
 
