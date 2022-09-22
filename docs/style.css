@@ -1,71 +1,74 @@
-/* ADD REAL PHOTO LATER */
-
-body{
-    padding: 38px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: wheat;
-    font-family: "Lato", sans-serif;
+:root {
+  --colorScheme: rgb(179, 245, 245);
 }
 
-.info{
-    border-radius: 20px;
-    vertical-align: center;
-    background: rgb(0, 0, 0, 0.3);
-    text-align: center;
-    width: 400px;
-    padding: 50px;
-}
-.info-img{
-    width: 200px;
-    height: 200px;
-}
-.info p{
-    font-size: 18px;
-    font-weight: 100;
-}
-ul{
-    margin: 0;
-    padding: 0;
-}
-.info li{
-    display: inline-block;
-    margin: 5px;
-    list-style: none;
-    padding: 10px;
-}
-.info li a{
-    color: wheat;
-    font-size: 50px;
-}
-.info li a:hover{
-    color: black;
-    transition: ease-in-out 700ms;
+body {
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--colorScheme);
+  font-family: "Lato", sans-serif;
 }
 
-#funFacts-container{
-    margin-left: 38px;
-    width: 200px;
-    height: fit-content;
+.info {
+  border-radius: 20px;
+  vertical-align: center;
+  background: rgb(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+  padding: 50px;
 }
-#funFacts{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    font-size: 18px;
+.info-img {
+  width: 200px;
+  border-radius: 50%;
+}
+.info p {
+  font-size: 18px;
+  font-weight: 100;
+  text-align: left;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.info li {
+  display: inline-block;
+  margin: 5px;
+  list-style: none;
+  padding: 10px;
+}
+.info li a {
+  color: var(--colorScheme);
+  font-size: 50px;
+}
+.info li a:hover {
+  color: black;
+  transition: ease-in-out 700ms;
 }
 
-#newFactButton{
-    background-color: wheat;
-    color: black;
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: ease-in-out 500ms;
+#funFacts-container {
+  margin-left: 38px;
+  width: 200px;
+  height: fit-content;
 }
-#newFactButton:hover{
-    background-color: rgb(231, 179, 83);
+#funFacts {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
 }
 
-
-
+#newFactButton {
+  background-color: var(--colorScheme);
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: ease-in-out 500ms;
+  cursor: pointer;
+}
+#newFactButton:hover {
+  background-color: var(--colorScheme);
+}
