@@ -1,74 +1,65 @@
 :root {
-  --colorScheme: rgb(179, 245, 245);
+    --colorScheme: rgb(179, 245, 245);
 }
 
 body {
-  padding: 38px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--colorScheme);
-  font-family: "Lato", sans-serif;
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--colorScheme);
+    font-family: "Lato", sans-serif;
 }
-
 .info {
-  border-radius: 20px;
-  vertical-align: center;
-  background: rgb(0, 0, 0, 0.3);
-  text-align: center;
-  width: 400px;
-  padding: 50px;
+    border-radius: 20px;
+    vertical-align: center;
+    background: rgb(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    padding: 50px;
+}
+.img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-container {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
 }
 .info-img {
-  width: 200px;
-  border-radius: 50%;
+    display: block;
+    width: 100%;
 }
 .info p {
-  font-size: 18px;
-  font-weight: 100;
-  text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: left;
 }
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .info li {
-  display: inline-block;
-  margin: 5px;
-  list-style: none;
-  padding: 10px;
+    display: inline-block;
+    margin: 5px;
+    list-style: none;
+    padding: 10px;
 }
 .info li a {
-  color: var(--colorScheme);
-  font-size: 50px;
+    color: var(--colorScheme);
+    font-size: 50px;
 }
 .info li a:hover {
-  color: black;
-  transition: ease-in-out 700ms;
+    color: black;
+    transition: ease-in-out 700ms;
 }
-
-#funFacts-container {
-  margin-left: 38px;
-  width: 200px;
-  height: fit-content;
-}
-#funFacts {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-}
-
-#newFactButton {
-  background-color: var(--colorScheme);
-  color: black;
-  border-radius: 10px;
-  border: 2px solid black;
-  transition: ease-in-out 500ms;
-  cursor: pointer;
-}
-#newFactButton:hover {
-  background-color: var(--colorScheme);
+.typing-container {
+    text-align: center;
+    font-size: 18px;
 }
