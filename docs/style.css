@@ -35,6 +35,13 @@ body {
 .info-img {
     display: block;
     width: 100%;
+    padding-top: 1.25rem;
+    /* object-fit: cover; */
+    transform: scale(2);
+}
+.info-link {
+    color: black;
+    cursor: pointer;
 }
 .info p {
     font-size: 18px;
@@ -58,6 +65,7 @@ ul {
 .info li a:hover {
     color: black;
     transition: ease-in-out 700ms;
+    cursor: pointer;
 }
 .typing-container {
     text-align: center;
